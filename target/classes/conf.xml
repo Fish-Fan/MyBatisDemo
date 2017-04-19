@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--配置-->
+<configuration>
+    <properties resource="conf.properties" />
+
+    <!--类型别名-->
+    <typeAliases>
+        <typeAlias type="com.fanyank.pojo.User" alias="User"/>
+    </typeAliases>
+
+    <!--环境配置-->
+    <environments default="development">
+        <!--环境变量-->
+        <environment id="development">
+            <!--事物管理器-->
+            <transactionManager type="JDBC" />
+            <!-- 配置数据库连接信息 -->
+            <dataSource type="POOLED">
+                <!--属性-->
+                <property name="driver" value="${driver}" />
+                <property name="url" value="${url}" />
+                <property name="username" value="${username}" />
+                <property name="password" value="${password}" />
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--映射-->
+    <mappers>
+        <mapper resource="mapper/userMapper.xml"/>
+    </mappers>
+
+</configuration>
