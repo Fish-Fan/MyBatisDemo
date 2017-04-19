@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fanyank.mapper.ProductMapper">
+    <select id="getProduct" parameterType="int" resultType="product">
+        select * from t_product where id = #{id}
+    </select>
+
+    <select id="getProductCountByType" parameterType="int" resultType="int">
+        select count(*) from t_product where typeid = #{type_id}
+    </select>
+
+    <!--注解传参不需要paramType-->
+    <select id="findByAnnotation" resultType="product">
+        select * from t_product where id = #{id} and num = #{num}
+    </select>
+
+    <!--使用JavaBean的方式传参-->
+    <select id="findByJavaBean" parameterType="com.fanyank.param.ProductBeanParam" resultType="product">
+        select * from t_product where id = #{id} and num = #{num}
+    </select>
+</mapper>

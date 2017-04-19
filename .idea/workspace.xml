@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2de8809-372c-4f89-9885-d79ec617e904" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fanyank/mapper/UserMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/fanyank/mapper/UserMapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test.class" afterPath="$PROJECT_DIR$/target/classes/test.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -803,7 +802,7 @@
       <updated>1492473159784</updated>
       <workItem from="1492473163667" duration="1676000" />
       <workItem from="1492503595916" duration="5965000" />
-      <workItem from="1492583556192" duration="7005000" />
+      <workItem from="1492583556192" duration="7017000" />
     </task>
     <task id="LOCAL-00001" summary="last commit">
       <created>1492592773217</created>
@@ -812,11 +811,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492592773217</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="last commit">
+      <created>1492592828591</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1492592828591</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14646000" />
+    <option name="totallyTimeSpent" value="14658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
