@@ -7,7 +7,9 @@
 
     <!--类型别名-->
     <typeAliases>
-        <typeAlias type="com.fanyank.pojo.User" alias="User"/>
+        <typeAlias type="com.fanyank.pojo.User" alias="user"/>
+        <typeAlias type="com.fanyank.pojo.Product" alias="product"/>
+        <typeAlias type="com.fanyank.pojo.Product_Type" alias="product_type"/>
     </typeAliases>
 
     <!--环境配置-->
@@ -30,6 +32,8 @@
     <!--映射-->
     <mappers>
         <mapper resource="mapper/userMapper.xml"/>
+        <mapper resource="mapper/productMapper.xml" />
+        <mapper resource="mapper/product_typeMapper.xml"/>
     </mappers>
 
 </configuration>

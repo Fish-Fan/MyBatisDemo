@@ -11,7 +11,7 @@ import org.apache.ibatis.annotations.Update;
  */
 public interface UserMapper {
     //注解形式的Mapper
-    @Select (value = "select * from t_user where id = #{id}")
+//    @Select (value = "select * from t_user where id = #{id}")
     public User getUser(Integer id);
 
     @Insert(value = "insert into t_user(id,username,password) values(#{id},#{username},#{password})")
@@ -22,4 +22,6 @@ public interface UserMapper {
 
     @Update(value = "update t_user set username = #{username},password = #{password} where id = #{id}")
     public void updateUser(User user);
+
+    public Integer saveUser(User user);
 }
